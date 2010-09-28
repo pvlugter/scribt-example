@@ -1,0 +1,6 @@
+sh git checkout publish
+sh git rebase master 
+reload
+publish
+sh git checkout -f master
+reload
