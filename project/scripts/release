@@ -1,7 +1,7 @@
 script version-sans.scala
-sh git commit -am 'release version #{project.version}'
-sh git tag -m 'version #{project.version}' v#{project.version}
+sh git commit -am 'release version {{project.version}}'
+sh git tag -m 'version {{project.version}}' v{{project.version}}
 script publish
 increment-version
 script version-snapshot.scala
-sh git commit -am 'bump to version #{project.version}'
+sh git commit -am 'bump to version {{project.version}}'
